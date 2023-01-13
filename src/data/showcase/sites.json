@@ -1,8 +1,8 @@
 [
   {
-    "title": "PoliNations",
-    "image": "./images/polinations.png",
-    "url": "https://polinations.com/"
+    "title": "Deploy a React App with Vite and Vercel",
+    "image": "./images/tjtreactapp.png",
+    "url": "https://github.com/jennjunod/reactapp07052022"
   },
   {
     "title": "Astro Docs",
