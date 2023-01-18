@@ -13,20 +13,5 @@
     "title": "Speaking3",
     "image": "./images/speaking3.png",
     "url": "https://divriots.com/"
-  },
-  {
-    "title": "Speaking4",
-    "image": "./images/speaking4.png",
-    "url": "https://designcember.com/"
-  },
-  {
-    "title": "Speaking5",
-    "image": "./images/speaking5.png",
-    "url": "https://firebase.blog/"
-  },
-  {
-    "title": "Speaking6",
-    "image": "./images/speaking6.png",
-    "url": "https://corset.dev/"
   }
 ]

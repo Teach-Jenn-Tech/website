@@ -13,20 +13,5 @@
     "title": "Writing3",
     "image": "./images/writing3.png",
     "url": "https://divriots.com/"
-  },
-  {
-    "title": "Writing4",
-    "image": "./images/writing4.png",
-    "url": "https://designcember.com/"
-  },
-  {
-    "title": "Writing5",
-    "image": "./images/writing5.png",
-    "url": "https://firebase.blog/"
-  },
-  {
-    "title": "Writing6",
-    "image": "./images/writing6.png",
-    "url": "https://corset.dev/"
   }
 ]

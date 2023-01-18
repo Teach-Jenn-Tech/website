@@ -13,20 +13,5 @@
     "title": "Code3",
     "image": "./images/code3.png",
     "url": "https://divriots.com/"
-  },
-  {
-    "title": "Code4",
-    "image": "./images/code4.png",
-    "url": "https://designcember.com/"
-  },
-  {
-    "title": "Code5",
-    "image": "./images/code5.png",
-    "url": "https://firebase.blog/"
-  },
-  {
-    "title": "Code6",
-    "image": "./images/code6.png",
-    "url": "https://corset.dev/"
   }
 ]
