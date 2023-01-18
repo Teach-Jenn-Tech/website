@@ -1,17 +1,17 @@
 [
   {
-    "title": "Speaking1",
-    "image": "./images/speaking1.png",
-    "url": "https://github.com/jennjunod/reactapp07052022"
+    "title": "Breaking into Tech through Streaming",
+    "image": "./images/codingcatdevpodcast.png",
+    "url": "https://codingcat.dev/podcast/2-45-Breaking-into-Tech-through-Streaming#jenn-junod"
   },
   {
-    "title": "Speaking2",
-    "image": "./images/speaking2.png",
-    "url": "https://docs.astro.build/"
+    "title": "You Got This Conference 2023",
+    "image": "./images/yougothis012023.jpeg",
+    "url": "https://yougotthis.io/events/broadcasting-service/"
   },
   {
-    "title": "Speaking3",
-    "image": "./images/speaking3.png",
-    "url": "https://divriots.com/"
+    "title": "MC Nuxt Nation 2022",
+    "image": "./images/2022nuxtnationmc.jpeg",
+    "url": "https://youtube.com/playlist?list=PLxddmVXxb3Hu4yg6jEUBcQ6xix6QM0ews"
   }
 ]
