@@ -1,14 +1,15 @@
 ---
 import "@fontsource/inter/variable.css";
-import Compatibility from "~/components/compatibility.astro";
-import Features from "~/components/features.astro";
+// import Compatibility from "~/components/compatibility.astro";
+// import Features from "~/components/features.astro";
 import Footer from "~/components/footer.astro";
 import Header from "~/components/header.astro";
 import Intro from "~/components/intro.astro";
-import Showcase from "~/components/showcase.astro";
+import Code from "~/components/code.astro";
 import Splash from "~/components/splash.astro";
 import "~/styles/index.css";
-import Jenn from 'src/assets/jennjunodportrait.png';
+import Writing from "~/components/writing.astro";
+import Speaking from "~/components/speaking.astro";
 
 const { generator, site } = Astro;
 const image = new URL("social.jpg", site);
@@ -24,7 +25,7 @@ const description =
     <link rel="icon" href="/tjtfavicon.png" type="image/png+xml" />
     <meta name="generator" content={generator} />
 
-    <title>Teach Jenn Tech Landing Page</title>
+    <title>Teach Jenn Tech</title>
     <meta name="description" content={description} />
 
     <!-- social media -->
@@ -66,9 +67,9 @@ const description =
     <Splash />
     <div class="space-y-24 px-8 py-32">
       <Intro />
-      <Features />
-      <Compatibility />
-      <Showcase />
+      <Code />
+      <Writing />
+      <Speaking />
     </div>
     <Footer />
   </body>

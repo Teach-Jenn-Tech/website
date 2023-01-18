@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Writing1",
+    "image": "./images/writing1.png",
+    "url": "https://github.com/jennjunod/reactapp07052022"
+  },
+  {
+    "title": "Writing2",
+    "image": "./images/writing2.png",
+    "url": "https://docs.astro.build/"
+  },
+  {
+    "title": "Writing3",
+    "image": "./images/writing3.png",
+    "url": "https://divriots.com/"
+  }
+]

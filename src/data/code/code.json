@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Code1",
+    "image": "./images/code1.png",
+    "url": "https://github.com/jennjunod/reactapp07052022"
+  },
+  {
+    "title": "Code2",
+    "image": "./images/code2.png",
+    "url": "https://docs.astro.build/"
+  },
+  {
+    "title": "Code3",
+    "image": "./images/code3.png",
+    "url": "https://divriots.com/"
+  }
+]
