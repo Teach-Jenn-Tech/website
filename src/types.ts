@@ -21,7 +21,7 @@ export interface NavItem {
   url: string;
 }
 
-export interface ShowcaseSite {
+export interface CodeSite {
   title: string;
   image: ImageMetadata;
   url: string;

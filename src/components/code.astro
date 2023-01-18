@@ -1,9 +1,9 @@
 ---
 import ContentSection from "~/components/content-section.astro";
 import ShowcaseCard from "~/components/showcase-card.astro";
-import { getShowcase } from "~/data/showcase1";
+import { getCode } from "~/data/code/index.ts"
 
-const sites = await getShowcase();
+const sites = await getCode();
 ---
 <ContentSection title="Showcase1" id="showcase">
   <Fragment slot="lead">
