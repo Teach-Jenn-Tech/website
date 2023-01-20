@@ -10,11 +10,12 @@ import Splash from "~/components/splash.astro";
 import "~/styles/index.css";
 import Writing from "~/components/writing.astro";
 import Speaking from "~/components/speaking.astro";
+import social from "/public/tjtsocial.jpeg"
 
 const { generator, site } = Astro;
-const image = new URL("social.jpg", site);
+const image = new URL(social, site);
 const description =
-  "Build fast websites, faster. Astro is a new kind of site builder for the modern web. Lightning-fast performance meets powerful developer experience.";
+  "Teach Jenn Tech creates a space to allow individuals to remove shame, explore tech, and share resources with thought leaders in the industry.";
 ---
 
 <!DOCTYPE html>
