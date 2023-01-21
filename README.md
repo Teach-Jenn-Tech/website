@@ -1,10 +1,12 @@
 [![Built with Astro](https://astro.badg.es/v1/built-with-astro.svg)](https://astro.build)
 
-# Astro Landing Page
+# Teach Jenn Tech Website
 
-> An Astro + Tailwind CSS example/template for landing pages.
+## Credits
 
-![Screenshots of Astro Landing Page](screenshots.jpg)
+- @mhyfritz for the @withastro template [astro-landing-page](https://github.com/mhyfritz/astro-landing-page)
+- @kjaymiller for [vscode-add-conduct](https://github.com/Github-Community-Standards/vscode-add-conduct) & creating @Github-Community-Standards
+
 
 ## Features
 
@@ -30,11 +32,4 @@
 | `npm run astro --help` | Get help using the Astro CLI                       |
 | `npm run format`       | Format code with [Prettier](https://prettier.io/)  |
 | `npm run clean`        | Remove `node_modules` and build output             |
-
-## Credits
-
-- astronaut image
-  - source: https://github.com/withastro/astro-og-image; note: this repo is not available anymore
-- moon image
-  - source: https://unsplash.com/@nasa
-- other than that, a lot of material (showcase data, copy) was taken from official Astro sources, in particular https://astro.build/blog/introducing-astro/ and https://github.com/withastro/astro.build
+| `npm install sharp`        | Fix [error   Cannot find package '@astrojs/image'](https://docs.astro.build/en/guides/integrations-guide/image/#installing-sharp-optional)            |
