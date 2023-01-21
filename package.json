@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "@astrojs/image": "^0.11.6",
+    "@astrojs/rss": "^2.0.0",
     "@fontsource/inter": "^4.5.14",
     "micromodal": "^0.4.10",
     "sharp": "^0.31.3",
