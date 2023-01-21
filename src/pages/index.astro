@@ -13,7 +13,7 @@ import Speaking from "~/components/speaking.astro";
 import social from "/public/tjtsocial.jpeg"
 
 const { generator, site } = Astro;
-const image = new URL(social, site);
+const image = new URL(social.src, site);
 const description =
   "Teach Jenn Tech creates a space to allow individuals to remove shame, explore tech, and share resources with thought leaders in the industry.";
 ---
