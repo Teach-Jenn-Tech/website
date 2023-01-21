@@ -1,59 +1,135 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
+import "@fontsource/inter/variable.css";
+import ContentSection from "~/components/content-section.astro";
 import Footer from "~/components/footer.astro";
 import Header from "~/components/header.astro";
+import Splash from "~/components/splash.astro";
+import "~/styles/index.css";
+import BaseHead from '../components/BaseHead.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from 'config';
+import social from "/public/tjtsocial.jpeg"
+
 
 // Use Astro.glob() to fetch all posts, and then sort them by date.
 const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
 	(a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf()
 );
+
+const { generator, site } = Astro;
+const image = new URL(social.src, site);
+const description =
+  "Teach Jenn Tech creates a space to allow individuals to remove shame, explore tech, and share resources with thought leaders in the industry.";
 ---
 
+
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<style>
-			ul {
-				list-style-type: none;
-				padding: unset;
-			}
-			ul li {
-				display: flex;
-			}
-			ul li time {
-				flex: 0 0 130px;
-				font-style: italic;
-				color: #595959;
-			}
-			ul li a:visited {
-				color: #8e32dc;
-			}
-		</style>
-	</head>
-	<body>
-		<Header />
-		<main>
-			<section>
-				<ul>
-					{
-						posts.map((post) => (
-							<li>
-								<time datetime={post.frontmatter.pubDate}>
-									{new Date(post.frontmatter.pubDate).toLocaleDateString('en-us', {
-										year: 'numeric',
-										month: 'short',
-										day: 'numeric',
-									})}
-								</time>
-								<a href={post.url}>{post.frontmatter.title}</a>
-							</li>
-						))
-					}
-				</ul>
-			</section>
-		</main>
-		<Footer />
-	</body>
+<html lang="en" class="h-full motion-safe:scroll-smooth" data-theme="dark">
+<head>
+    <!-- <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="/tjtfavicon.png" type="image/png+xml" />
+    <meta name="generator" content={generator} /> -->
+
+    <!-- <title>Teach Jenn Tech</title>
+    <meta name="description" content={description} /> -->
+
+    <!-- social media -->
+    <!-- <meta property="og:title" content="Astro" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+    <meta property="og:url" content={site} />
+    <meta name="twitter:card" content="summary_large_image" /> -->
+
+    <!-- initialize theme -->
+    <script is:inline>
+const themeSaved = localStorage.getItem("theme");
+
+if (themeSaved) {
+        document.documentElement.dataset.theme = themeSaved;
+} else {
+        const prefersDark = window.matchMedia(
+"(prefers-color-scheme: dark)"
+        ).matches;
+        document.documentElement.dataset.theme = prefersDark ? "dark" : "light";
+}
+
+window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addEventListener("change", (event) => {
+if (!localStorage.getItem("theme")) {
+            document.documentElement.dataset.theme = event.matches
+            ? "dark"
+        : "light";
+        }
+        });
+    </script>
+</head>
+<body
+    class="h-full overflow-x-hidden bg-default text-default text-base selection:bg-secondary selection:text-white">
+<body>
+
+    <Header />
+    <Splash />
+    <div class="space-y-24 px-8 py-32">
+      <ContentSection title="Blog" id="blog">
+
+        
+        <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+            <style>
+              ul {
+                list-style-type: none;
+                padding: unset;
+              }
+              ul li {
+                display: flex;
+              }
+              ul li time {
+                flex: 0 0 130px;
+                font-style: italic;
+                color: #595959;
+              }
+              ul li a:visited {
+                color: #8e32dc;
+              }
+            </style>
+          </head>
+          <body>
+          <body
+            class="h-full overflow-x-hidden bg-default text-default text-base selection:bg-secondary selection:text-white"
+            >
+            <main>
+              <section>
+                <ul>
+                  {
+                    posts.map((post) => (
+                      <li>
+                        <time datetime={post.frontmatter.pubDate}>
+                          {new Date(post.frontmatter.pubDate).toLocaleDateString('en-us', {
+                            year: 'numeric',
+                            month: 'short',
+                            day: 'numeric',
+                          })}
+                        </time>
+                        <a href={post.url}>{post.frontmatter.title}</a>
+                      </li>
+                    ))
+                  }
+                </ul>
+              </section>
+            </main>
+          </footer>
+          </body>
+        </html>
+
+            </div>
+          
+          
+            </div>          
+    </div>
+    <Footer />
+</body>
 </html>
