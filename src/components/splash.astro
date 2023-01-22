@@ -3,6 +3,7 @@
 // import { Icon } from "astro-icon";
 //import astronautImage from "~/assets/astronaut.png";
 import HeroImage from "~/components/hero-image.astro";
+import Header from "~/components/header.astro";
 //import Starfield from "~/components/starfield.astro"; line 14   <Starfield />
 //import blobs from "~/components/blobs.astro";
 import GitHubCorner from "./github-corner.astro";
@@ -11,16 +12,17 @@ const widths = [450, 800];
 const sizes = "(min-width: 640px) 42vw, 67vw";
 ---
 
-<section class="relative h-full bg-black">
+<section class="relative h-1/2 bg-black">
+<Header />
   <div class="absolute inset-0">
     <!-- <div class="absolute left-1/4 top-1/4 w-64 h-64 bg-pink-200 rounded-full blur-3xl"></div> -->
     <div class="absolute right-2.5 top-2.5 bottom-2.5 left-2.5 w-112  h-112 bg-purple-400/25 rounded-full blur-3xl  "></div>
   </div>
   <GitHubCorner />
   <div id="splash-bg-fallback" class="absolute inset-0 hidden opacity-10">
-    <HeroImage />
+    <!-- <HeroImage /> -->
   </div>
-  <div class="relative grid h-full place-items-center sm:grid-cols-1">
+  <div class="relative grid h-1/2 place-items-center sm:grid-cols-1">
     <h2
       class="flex flex-col gap-1 center sm:gap-4 sm:self-auto sm:justify-center"
     >
