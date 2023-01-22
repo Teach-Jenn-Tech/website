@@ -26,3 +26,10 @@ export interface CodeSite {
   image: ImageMetadata;
   url: string;
 }
+
+export interface StreamSite {
+  title: string;
+  image: ImageMetadata;
+  url: string;
+  date: string;
+}
