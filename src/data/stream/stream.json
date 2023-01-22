@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Marketing Site",
+    "image": "./images/teachjenntechthumbnail.png",
+    "url": "https://github.com/Teach-Jenn-Tech/website"
+  },
+  {
+    "title": "Prisma with Aiven",
+    "image": "./images/aivenandprisma.png",
+    "url": "https://github.com/jennjunod/aivenda"
+  },
+  {
+    "title": "Teach Jenn how to Deploy a React App with Vite and Vercel",
+    "image": "./images/07052022tjt.png",
+    "url": "https://github.com/Teach-Jenn-Tech/reactapp07052022"
+  }
+]
