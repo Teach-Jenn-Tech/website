@@ -5,11 +5,12 @@ import "@fontsource/inter/variable.css";
 import Footer from "~/components/footer.astro";
 import Header from "~/components/header.astro";
 import Intro from "~/components/intro.astro";
-import Code from "~/components/code.astro";
+// import Code from "~/components/code.astro";
 import Splash from "~/components/splash.astro";
 import "~/styles/index.css";
-import Writing from "~/components/writing.astro";
-import Speaking from "~/components/speaking.astro";
+// import Writing from "~/components/writing.astro";
+// import Speaking from "~/components/speaking.astro";
+import Stream from "~/components/stream.astro";
 import social from "/public/tjtsocial.jpeg"
 
 const { generator, site } = Astro;
@@ -68,9 +69,9 @@ const description =
     <Splash />
     <div class="space-y-24 px-8 py-32">
       <Intro />
-      <Code />
-      <Writing />
-      <Speaking />
+      <Stream />
+      <!-- <Writing />
+      <Speaking /> -->
     </div>
     <Footer />
   </body>

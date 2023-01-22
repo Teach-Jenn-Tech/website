@@ -1,7 +1,7 @@
 // adapted from https://github.com/withastro/astro.build/blob/112bdc723b3ba305997c95d7ce02304624d0d3ce/src/data/showcase/index.ts
 
 import type { CodeSite } from "~/types";
-import sitesData from "./code.json";
+import sitesData from "./stream.json";
 
 const allImages = import.meta.glob<ImageMetadata>("./images/*.{png,jpg,jpeg}", {
   eager: true,
@@ -30,8 +30,7 @@ async function loadShowcase(): Promise<Array<CodeSite>> {
 
   return sites;
 }
-
-export async function getCode() {
+export async function getStream() {
   _loadShowcase = _loadShowcase || loadShowcase();
   return _loadShowcase;
 }

@@ -1,17 +1,17 @@
 [
   {
-    "title": "Marketing Site",
-    "image": "./images/teachjenntechthumbnail.png",
-    "url": "https://github.com/Teach-Jenn-Tech/website"
+    "title": "Misc Mondays with Laura",
+    "image": "./images/misc-mondays.png",
+    "url": "https://github.com/Teach-Jenn-Tech/misc-mondays"
   },
   {
-    "title": "Prisma with Aiven",
-    "image": "./images/aivenandprisma.png",
-    "url": "https://github.com/jennjunod/aivenda"
+    "title": "Vue Nation Online Conference",
+    "image": "./images/vue-nation.png",
+    "url": "https://vuejsnation.com/"
   },
   {
-    "title": "Teach Jenn how to Deploy a React App with Vite and Vercel",
-    "image": "./images/07052022tjt.png",
-    "url": "https://github.com/Teach-Jenn-Tech/reactapp07052022"
+    "title": "Learning Python",
+    "image": "./images/learning-python.png",
+    "url": "https://github.com/Teach-Jenn-Tech/learning-python"
   }
 ]

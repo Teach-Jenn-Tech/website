@@ -1,11 +1,11 @@
 ---
 import ContentSection from "~/components/content-section.astro";
 import ShowcaseCard from "~/components/showcase-card.astro";
-import { getWriting } from "~/data/writing/index"
+import { getStream } from "~/data/stream/index"
 
-const sites = await getWriting();
+const sites = await getStream();
 ---
-<ContentSection title="Writing" id="writing">
+<ContentSection title="Stream Schedule" id="stream">
 <Fragment slot="lead">
 <span class="text-primary">Technical</span>.{" "}
     <span class="text-primary">Creative</span>. {" "}
