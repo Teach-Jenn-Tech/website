@@ -1,15 +1,21 @@
 ---
 import { Picture } from "@astrojs/image/components";
-import moonImage from "~/assets/boarderimage.png";
+import moonImage from "~/assets/teach-jenn-tech.svg";
 
 const widths = [450, 800, 1200];
 const sizes = "100vw";
 ---
 
-<Picture
+<!-- <Picture
   class="object-cover w-full h-full"
   src={moonImage}
   widths={widths}
   sizes={sizes}
   alt="Teach Jenn Tech background image with pink, blue, and purple"
-/>
+/> -->
+
+<img class="object-cover w-full h-full"
+src={moonImage}
+sizes={sizes}
+  alt="Teach Jenn Tech title image"
+>

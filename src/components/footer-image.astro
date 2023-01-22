@@ -1,0 +1,15 @@
+---
+import { Picture } from "@astrojs/image/components";
+import footerImage from "~/assets/footerimage.png";
+
+const widths = [450, 800, 1200];
+const sizes = "100vw";
+---
+
+<Picture
+  class="object-cover w-full h-full"
+  src={footerImage}
+  widths={widths}
+  sizes={sizes}
+  alt="Teach Jenn Tech background image with pink, blue, and purple"
+/>
