@@ -5,7 +5,6 @@ import Header from "~/components/header.astro";
 import Intro from "~/components/intro.astro";
 import Splash from "~/components/splash.astro";
 import "~/styles/index.css";
-import Stream from "~/components/stream.astro";
 import social from "/public/tjtsocial.jpeg"
 
 const { generator, site } = Astro;
@@ -63,9 +62,7 @@ const description =
     <Header />
     <Splash />
     <div class="space-y-24 px-8 py-32">
-      <Stream />
-      <!-- <Writing />
-      <Speaking /> -->
+      <Intro />
     </div>
     <Footer />
   </body>

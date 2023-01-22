@@ -6,11 +6,11 @@ import { getStream } from "~/data/stream/index"
 const sites = await getStream();
 ---
 <ContentSection title="Stream Schedule" id="stream">
-<Fragment slot="lead">
-<span class="text-primary">Technical</span>.{" "}
-    <span class="text-primary">Creative</span>. {" "}
-    <span class="text-primary">Editor</span>.
-</Fragment>
+<!-- <Fragment slot="lead">
+<span class="text-primary">Twitch</span>.{" "}
+    <span class="text-primary">YouTube</span>. {" "}
+    <span class="text-primary">Twitter Spaces</span>.
+</Fragment> -->
 <div class="max-w-6xl space-y-2">
     <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
     {sites.map((site) => <ShowcaseCard site={site} />)}
