@@ -10,10 +10,8 @@ import ThemeSwitcher from "~/components/theme-switcher.astro";
 import type { NavItem } from "~/types";
 
 const navItems: Array<NavItem> = [
-  { title: "Stream Schedule", url: "#stream" },
-  { title: "Code", url: "#code" },
-  { title: "Writing", url: "#writing" },
-  { title: "Speaking", url: "#speaking" },
+  { title: "Stream Schedule", url: "/" },
+  { title: "Portfolio", url: "portfolio" },
   { title: "Resume", url: "resume" },
 
 ];
@@ -23,7 +21,7 @@ const navItems: Array<NavItem> = [
   id="page-header"
   class="absolute bottom-0 z-20 flex w-full items-center justify-between border-b border-transparent px-8 py-4 text-white"
 >
-  <a class="flex items-center gap-3 hover:!text-default" href="#">
+  <a class="flex items-center gap-3 hover:!text-default" href="/">
     <h1 class="sr-only">Teach Jenn Tech</h1>
     <Image src={tjt} class="w-16 object-contain" alt= "Teach Jenn Tech Logo" />
     <!-- <Icon name="logomark" class="h-10" />
