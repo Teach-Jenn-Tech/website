@@ -5,6 +5,10 @@ import "~/styles/index.css";
 import social from "/public/tjtsocial.jpeg"
 import Splash from "~/components/splash.astro";
 import type { MarkdownInstance } from "astro";
+import { getBlog } from "~/data/blog/index"
+
+const sites = await getBlog();
+
 export interface Frontmatter {
 title: string;
 description: string;
@@ -68,7 +72,7 @@ const sizes = "100vw";
     </script>
 </head>
 <body
-    class="h-full overflow-x-hidden bg-default text-default text-base selection:bg-secondary selection:text-white"
+    class="prose lg:prose-xl h-full overflow-x-hidden bg-default text-default text-base selection:bg-secondary selection:text-white"
 >
     
     <Splash />
@@ -78,8 +82,8 @@ class="object-cover w-full h-full"
 src={heroImage}
 alt={heroImageAlt}
 />
-        <h1 class="text-8xl text-center">{title}</h1>
-        <p class="text-primary text-md text-center !mt-4">{pubDate}</p>
+        <!-- <h1 class="text-8xl text-center">{title}</h1>
+        <p class="text-primary text-md text-center !mt-4">{pubDate}</p> -->
     <slot />
     </div>
     <Footer />
