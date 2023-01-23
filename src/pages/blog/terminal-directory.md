@@ -3,12 +3,11 @@ layout: "../../layouts/BlogPost.astro"
 title: "How to update your default terminal in macOS"
 description: "When starting up a terminal on your Mac, are you annoyed with always having to `cd` wherever you go? Here’s where to start to make your default folder open whenever you open terminal!"
 pubDate: "Jan 18 2023"
-heroImage: "/src/assets/blog/terminal-directory.png"
-heroImageAlt: "This is my alt"
+heroImage: "/src/data/blog/images/terminal-directory.png"
+# heroImageAlt: "This is my alt"
 ---
 
 When starting up a terminal on your Mac, are you annoyed with always having to `cd` wherever you go? Here’s where to start to make your default folder open whenever you open terminal! 
-
 
 ## Start by ensuring that you’re using zsh
 
