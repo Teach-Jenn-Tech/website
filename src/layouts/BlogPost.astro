@@ -1,9 +1,6 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import { Picture } from "@astrojs/image/components";
 import "@fontsource/inter/variable.css";
 import Footer from "~/components/footer.astro";
-import Intro from "~/components/intro.astro";
 import "~/styles/index.css";
 import social from "/public/tjtsocial.jpeg"
 import Splash from "~/components/splash.astro";
@@ -75,7 +72,7 @@ const sizes = "100vw";
 >
     
     <Splash />
-    <div class="space-y-24 px-8 py-32">
+    <div class="space-y-4 px-8 py-32">
 <img
 class="object-cover w-full h-full"
 src={heroImage}
