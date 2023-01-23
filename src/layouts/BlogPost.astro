@@ -1,53 +1,91 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
-import Header from "~/components/header.astro";
+import { Picture } from "@astrojs/image/components";
+import "@fontsource/inter/variable.css";
 import Footer from "~/components/footer.astro";
+import Intro from "~/components/intro.astro";
+import "~/styles/index.css";
+import Stream from "~/components/stream.astro";
+import social from "/public/tjtsocial.jpeg"
+import Splash from "~/components/splash.astro";
+import type { MarkdownInstance } from "astro";
+export interface Frontmatter {
+  title: string;
+  description: string;
+  heroImage: string;
+  heroImageAlt: string;
+  pubDate: string;
+}
 
 export interface Props {
-title: string;
-description: string;
-permalink: string;
-current?: string;
+post: MarkdownInstance<Frontmatter>;
 }
-const { title, description, permalink, current } = Astro.props;
+const { title, pubDate, description, heroImage, heroImageAlt } = Astro.props.frontmatter;
+
+const { generator, site } = Astro;
+const image = new URL(social.src, site);
+const widths = [450, 800, 1200];
+const sizes = "100vw";
 ---
 
-<html lang="en">
-<head>
-    <BaseHead title={title} description={description} permalink={permalink} />
-</head>
-<body>
-    <Header current={current} />
+<!DOCTYPE html>
+<html lang="en" class="h-full motion-safe:scroll-smooth" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="/tjtfavicon.png" type="image/png+xml" />
+    <meta name="generator" content={generator} />
 
-    <main>
-<slot />
-    </main>
+    <title>Teach Jenn Tech</title>
+    <meta name="description" content={description} />
 
+    <!-- social media -->
+    <meta property="og:title" content="Teach Jenn Tech" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+    <meta property="og:url" content={site} />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- initialize theme -->
+    <script is:inline>
+      const themeSaved = localStorage.getItem("theme");
+
+      if (themeSaved) {
+        document.documentElement.dataset.theme = themeSaved;
+      } else {
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+        document.documentElement.dataset.theme = prefersDark ? "dark" : "light";
+      }
+
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addEventListener("change", (event) => {
+          if (!localStorage.getItem("theme")) {
+            document.documentElement.dataset.theme = event.matches
+              ? "dark"
+              : "light";
+          }
+        });
+    </script>
+  </head>
+  <body
+    class="h-full overflow-x-hidden bg-default text-default text-base selection:bg-secondary selection:text-white"
+  >
+    
+    <Splash />
+    <div class="space-y-24 px-8 py-32">
+<img
+  class="object-cover w-full h-full"
+  src={heroImage}
+  alt={heroImageAlt}
+/>
+        <h1 class="text-primary text-8xl text-center">{title}</h1>
+        <p class="text-primary text-md text-center !mt-4">{pubDate}</p>
+      <slot />
+    </div>
     <Footer />
-    <style>
-body {
-        display: flex;
-        flex-direction: column;
-        min-height: 100%;
-        min-height: 100vh;
-}
-
-main {
-        display: flex;
-        flex: 1;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-        max-width: 1400px;
-        padding: 1em 2em;
-        width: 100%;
-}
-
-@media (max-width: 800px) {
-        main {
-flex-direction: column;
-        }
-}
-    </style>
-</body>
+  </body>
 </html>
