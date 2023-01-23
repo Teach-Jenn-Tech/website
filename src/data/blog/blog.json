@@ -11,7 +11,7 @@
   },
   {
     "title": "How to update your default terminal in macOS",
-    "image": "./images/terminal-directory.png",
+    "image": "/src/images/terminal-directory.png",
     "url": "blog/terminal-directory"
   }
 ]
