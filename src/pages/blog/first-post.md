@@ -3,7 +3,7 @@ layout: "../../layouts/BlogPost.astro"
 title: "First post"
 description: "Lorem ipsum dolor sit amet"
 pubDate: "Jul 08 2022"
-heroImage: "/src/assets/footerimage.png"
+heroImage: "/src/assets/blog/astronaut.png"
 heroImageAlt: "This is my alt"
 ---
 

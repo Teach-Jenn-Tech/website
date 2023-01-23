@@ -1,8 +1,8 @@
 [
   {
-    "title": "PARdon me for my awkward interview",
-    "image": "./images/pardon.png",
-    "url": "https://dev.to/jennjunod/pardon-me-for-my-awkward-interview-389j"
+    "title": "First Post",
+    "image": "./images/aivenandprisma.png",
+    "url": "blog/first-post"
   },
   {
     "title": "Fullstack app? What? TweetyTag!",
@@ -10,8 +10,8 @@
     "url": "https://dev.to/jennjunod/fullstack-app-what-tweetytag-23oh"
   },
   {
-    "title": "Developcado",
-    "image": "./images/developcado.jpeg",
-    "url": "blog/first-post"
+    "title": "How to update your default terminal in macOS",
+    "image": "./images/terminal-directory.png",
+    "url": "blog/terminal-directory"
   }
 ]
