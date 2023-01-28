@@ -1,12 +1,11 @@
 ---
 import "@fontsource/inter/variable.css";
 import Footer from "~/components/footer.astro";
-import Header from "~/components/header.astro";
-import Intro from "~/components/intro.astro";
 import Splash from "~/components/splash.astro";
 import "~/styles/index.css";
 import Stream from "~/components/stream.astro";
 import social from "/public/tjtsocial.jpeg"
+import Paststream from "~/components/paststream.astro"
 
 const { generator, site } = Astro;
 const image = new URL(social.src, site);
@@ -64,6 +63,7 @@ const description =
     <Splash />
     <div class="space-y-24 px-8 py-32">
       <Stream />
+      <Paststream />
       <!-- <Writing />
       <Speaking /> -->
     </div>

@@ -1,16 +1,13 @@
 ---
 import ContentSection from "~/components/content-section.astro";
 import ShowcaseCard from "~/components/showcase-card.astro";
-import { getStream } from "~/data/stream/index"
+import { getPastStream } from "~/data/paststream/index"
 
-const sites = await getStream();
+const sites = await getPastStream();
 ---
-<ContentSection title="Stream Schedule" id="stream">
-  <Fragment slot="lead"> 
-    <span class="text-primary">Updated Monthly</span>
-  </Fragment>
+<ContentSection title="Past Streams" id="paststream">
   <div class="max-w-50vh space-y-4">
-    <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-5">
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
     {sites.map((site) => 
   (  <div>
     <ShowcaseCard site={site} />
