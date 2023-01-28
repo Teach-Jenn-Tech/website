@@ -3,30 +3,30 @@
     "title": "Misc Monday",
     "image": "./images/miscmonday.png",
     "url": "https://github.com/Teach-Jenn-Tech/misc-mondays",
-    "date": "asdfasdfasdf"
+    "date": "January 29, 2023"
   },
   {
     "title": "Teach Jenn Tech Guest",
     "image": "./images/teachjennteachguest.png",
-    "url": "https://vuejsnation.com/",
-    "date": "asdf"
+    "url": "https://www.twitch.tv/jennjunod",
+    "date": "January 30, 2023"
   },
   {
     "title": "Mental Health & Neurodiversity Twitter Space",
     "image": "./images/mentalhealthtwitterspace.png",
-    "url": "https://github.com/Teach-Jenn-Tech/misc-mondays",
-    "date": "asdfasdfasdf"
+    "url": "https://twitter.com/i/spaces/1zqJVPVeWEpKB",
+    "date": "January 31, 2023"
   },
   {
     "title": "OSS Thursday with Distribute Aid",
     "image": "./images/ossthursday.png",
-    "url": "https://vuejsnation.com/",
-    "date": "asdf"
+    "url": "https://github.com/Teach-Jenn-Tech/distribute-aid",
+    "date": "February 1, 2023"
   },
   {
     "title": "Learning TypeScript",
     "image": "./images/learnypescript.png",
-    "url": "https://github.com/Teach-Jenn-Tech/learning-python",
-    "date": "January 23, 2023"
+    "url": "https://github.com/Teach-Jenn-Tech/learning-typescript",
+    "date": "February 2, 2023"
   }
 ]
