@@ -1,17 +1,17 @@
 [
   {
+    "title": "You Got This Conference 2023",
+    "image": "./images/yougothis012023.jpeg",
+    "url": "https://yougotthis.io/library/mastery-of-saying-f-it"
+  },
+  {
+    "title": "MC Vue Nation 2023",
+    "image": "./images/vuenationmc.png",
+    "url": "https://vi.to/hubs/vuejs-nation/pages/replay-day-1-fb98f261-327e-4c40-bd21-b4fc6400f6e7"
+  },
+  {
     "title": "Breaking into Tech through Streaming",
     "image": "./images/codingcatdevpodcast.png",
     "url": "https://codingcat.dev/podcast/2-45-Breaking-into-Tech-through-Streaming#jenn-junod"
-  },
-  {
-    "title": "You Got This Conference 2023",
-    "image": "./images/yougothis012023.jpeg",
-    "url": "https://yougotthis.io/events/broadcasting-service/"
-  },
-  {
-    "title": "MC Nuxt Nation 2022",
-    "image": "./images/2022nuxtnationmc.jpeg",
-    "url": "https://youtube.com/playlist?list=PLxddmVXxb3Hu4yg6jEUBcQ6xix6QM0ews"
   }
 ]
