@@ -1,19 +1,31 @@
 [
   {
-    "title": "Learning Python",
-    "image": "./images/learning-python.png",
+    "title": "Misc Monday",
+    "image": "./images/miscmonday.png",
     "url": "https://github.com/Teach-Jenn-Tech/misc-mondays",
     "date": "asdfasdfasdf"
   },
   {
-    "title": "Distribute Aid",
-    "image": "./images/distribute-aid.png",
+    "title": "Teach Jenn Tech Guest",
+    "image": "./images/teachjennteachguest.png",
     "url": "https://vuejsnation.com/",
     "date": "asdf"
   },
   {
-    "title": "Twitter Space",
-    "image": "./images/learning-python.png",
+    "title": "Mental Health & Neurodiversity Twitter Space",
+    "image": "./images/mentalhealthtwitterspace.png",
+    "url": "https://github.com/Teach-Jenn-Tech/misc-mondays",
+    "date": "asdfasdfasdf"
+  },
+  {
+    "title": "OSS Thursday with Distribute Aid",
+    "image": "./images/ossthursday.png",
+    "url": "https://vuejsnation.com/",
+    "date": "asdf"
+  },
+  {
+    "title": "Learning TypeScript",
+    "image": "./images/learnypescript.png",
     "url": "https://github.com/Teach-Jenn-Tech/learning-python",
     "date": "January 23, 2023"
   }
