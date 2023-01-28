@@ -10,11 +10,5 @@
     "image": "./images/vuenationmc.png",
     "url": "https://vuejsnation.com/",
     "date": "January 23, 2023"
-  },
-  {
-    "title": "Learning TypeScript",
-    "image": "./images/learning-typescript.png",
-    "url": "https://github.com/Teach-Jenn-Tech/learning-python",
-    "date": "January 23, 2023"
   }
 ]

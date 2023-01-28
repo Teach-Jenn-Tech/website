@@ -5,14 +5,18 @@ import { getPastStream } from "~/data/paststream/index"
 
 const sites = await getPastStream();
 ---
-<ContentSection title="Past Streams" id="paststream">
+<ContentSection title="" id="stream">
+  <Fragment slot="lead"> 
+    <span class="text-primary">Ways to Watch</span>
+  </Fragment>
   <div class="max-w-50vh space-y-4">
-    <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
-    {sites.map((site) => 
+    <div class="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-2">
+    <!-- {sites.map((site) => 
   (  <div>
     <ShowcaseCard site={site} />
     <center>{site.date}</center>
-    </div>))} 
+    </div>))}  -->
+    {sites.map((site) => <ShowcaseCard site={site} />)}
     </div>
 </div>
 </ContentSection>
