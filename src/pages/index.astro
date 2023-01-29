@@ -6,7 +6,7 @@ import Intro from "~/components/intro.astro";
 import Splash from "~/components/splash.astro";
 import "~/styles/index.css";
 import social from "/public/tjtsocial.jpeg"
-import "~/styles/theme.css"
+
 
 const { generator, site } = Astro;
 const image = new URL(social.src, site);
@@ -26,12 +26,28 @@ const description =
     <meta name="description" content={description} />
 
     <!-- social media -->
-    <meta property="og:title" content="Teach Jenn Tech" />
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content={description} />
-    <meta property="og:image" content={image} />
-    <meta property="og:url" content={site} />
-    <meta name="twitter:card" content="summary_large_image" />
+ 
+  <!-- HTML Meta Tags -->
+  <title>Teach Jenn Tech</title>
+  <meta name="description" content="Teach Jenn Tech creates a space to allow individuals to remove shame, explore tech, and share resources with thought leaders in the industry.">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="http://teachjenntech.com">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Teach Jenn Tech">
+  <meta property="og:description" content="Teach Jenn Tech creates a space to allow individuals to remove shame, explore tech, and share resources with thought leaders in the industry.">
+  <meta property="og:image" content="public/tjtsocial.jpeg">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="teachjenntech.com">
+  <meta property="twitter:url" content="http://teachjenntech.com">
+  <meta name="twitter:title" content="Teach Jenn Tech">
+  <meta name="twitter:description" content="Teach Jenn Tech creates a space to allow individuals to remove shame, explore tech, and share resources with thought leaders in the industry.">
+  <meta name="twitter:image" content="public/tjtsocial.jpeg">
+
+  <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+        
 
     <!-- initialize theme -->
     <script is:inline>
