@@ -10,6 +10,7 @@ const { generator, site } = Astro;
 const image = new URL(social.src, site);
 const description =
   "Teach Jenn Tech creates a space to allow individuals to remove shame, explore tech, and share resources with thought leaders in the industry.";
+const photo = (social)
 ---
 
 <!DOCTYPE html>
@@ -27,7 +28,7 @@ const description =
     <meta property="og:title" content="Teach Jenn Tech" />
     <meta property="og:type" content="website" />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={image} />
+    <meta property="og:image" content={photo} />
     <meta property="og:url" content={site} />
     <meta name="twitter:card" content="summary_large_image" />
 
