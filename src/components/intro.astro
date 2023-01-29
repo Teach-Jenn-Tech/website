@@ -5,19 +5,22 @@ import ContentSection from "~/components/content-section.astro";
 import portrait from '~/assets/jennjunodportrait.jpeg';
 import { Icon } from "astro-icon";
 import "~/styles/theme.css"
+import "~/styles/index.css";
 ---
 
 <ContentSection title="Jenn Junod" id="intro">
   
   <!-- <png slot="eyebrow" name="logomark" class="h-32" /> -->
   <Image slot="eyebrow" src={portrait} name="logomark" class="h-40 object-contain" />
-  
   <Fragment slot="lead">
-    <span class="text-primary">Curious </span> |
-    <span class="text-primary">Inclusive </span> |
-    <span class="text-primary">Open</span>
+      <span class="text-primary">Curious </span> |
+      <span class="text-primary">Inclusive </span> |
+      <span class="text-primary">Open</span>
+
     <div>
-<h4><center>I’m Jenn Junod, it’s lovely to meet you!</center></h4>
+
+
+  <font size= "h3"><font color="#4fb9af"><center><b>I’m Jenn Junod, it’s lovely to meet you!</b></font> </center>
 
 <p><center> As someone who thrives on human connection, I advocate for those who have gone unheard. My passion and experience create a space where people can come together, be it learning live, hosting   <a href="https://www.shit2talkabout.com/">Sh!t You Don't Want to Talk About Podcast</a>, or being a Developcado. </center></p>
   
@@ -26,6 +29,16 @@ import "~/styles/theme.css"
   </div>
  
 </ContentSection>
+
+<ContentSection title="Hire me" id="work">
+<Fragment slot="lead">
+  <span class="text-primary">    I’m open to full-time, consulting, content creation, and more! </span> 
+  <!-- <p>I am looking for my next adventure!</p> -->
+<ul style=“list-style-type:square”>
+  <li>  ➡ Devloper Relations | Evangelist | Advocate</li>
+  <li>  ➡ Community Manager</li>
+  <li>  ➡ Technical Writer</li>
+</ul>
 
 <div class="grid grid-cols-1 gap-2 sm:grid-cols-3">
   <a
@@ -46,3 +59,4 @@ import "~/styles/theme.css"
 >
   <span>Resume</span>
 </a>
+</ContentSection>
