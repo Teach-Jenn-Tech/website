@@ -1,17 +1,17 @@
 [
   {
-    "title": "PARdon me for my awkward interview",
-    "image": "./images/pardon.png",
+    "title": "The Breakdown of Serverless",
+    "image": "./images/BareMetal.png",
+    "url": "https://dev.to/jennjunod/the-breakdown-of-serverless-2e9a"
+  },
+  {
+    "title": "How to update your default terminal in macOS",
+    "image": "./images/terminaldirectory.png",
+    "url": "https://dev.to/jennjunod/cant-update-terminal-directory-4eo7"
+  },
+  {
+    "title": "PARdon me for my awkward interview!",
+    "image": "./images/PARdon.png",
     "url": "https://dev.to/jennjunod/pardon-me-for-my-awkward-interview-389j"
-  },
-  {
-    "title": "Fullstack app? What? TweetyTag!",
-    "image": "./images/aivenandprisma.png",
-    "url": "https://dev.to/jennjunod/fullstack-app-what-tweetytag-23oh"
-  },
-  {
-    "title": "Developcado",
-    "image": "./images/developcado.jpeg",
-    "url": "https://dev.to/jennjunod/series/19669"
   }
 ]
