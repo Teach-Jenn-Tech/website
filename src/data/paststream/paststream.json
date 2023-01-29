@@ -1,14 +1,14 @@
 [
   {
-    "title": "Misc Mondays with Laura",
-    "image": "./images/misc-mondays.png",
-    "url": "https://github.com/Teach-Jenn-Tech/misc-mondays",
+    "title": "Twitch",
+    "image": "./images/twitch.png",
+    "url": "https://www.twitch.tv/jennjunod",
     "date": "January 23, 2023"
   },
   {
-    "title": "Vue Nation Online Conference",
-    "image": "./images/vuenationmc.png",
-    "url": "https://vuejsnation.com/",
+    "title": "YouTube",
+    "image": "./images/youtube.png",
+    "url": "https://www.youtube.com/channel/UCOYqYy7ebj5j63TbdGB-Lcg",
     "date": "January 23, 2023"
   }
 ]
