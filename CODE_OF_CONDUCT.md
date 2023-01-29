@@ -129,3 +129,6 @@ For answers to common questions about this code of conduct, see the FAQ at
 [Mozilla CoC]: https://github.com/mozilla/diversity
 [FAQ]: https://www.contributor-covenant.org/faq
 [translations]: https://www.contributor-covenant.org/translations
+
+![tjtsocial](https://user-images.githubusercontent.com/77285384/215360605-4f3e4fb5-d4a9-486f-9f73-6f8dd707ad56.jpeg)
+
