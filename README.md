@@ -6,7 +6,11 @@
   </a>
 </p>
 
-Welcome to the Teach Jenn Tech Website Repo! This website was built share resources with beginners, be a portfolio, and help Jenn get a job with the resume piece. 🤞
+Welcome to the Teach Jenn Tech Website Repo! This website was built to:
+
+- Share resources with beginners
+- Be a portfolio
+- Present Jenn's Resume to help her get a job 🤞
 
 ## Outline
 
