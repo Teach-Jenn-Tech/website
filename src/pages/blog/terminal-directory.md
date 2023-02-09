@@ -7,14 +7,14 @@ heroImage: "/images/terminal-directory.png"
 heroImageAlt: "Image of woman screaming with text that states can't update terminal directory"
 ---
 
-When starting up a terminal on your Mac, are you annoyed with always having to `cd` wherever you go? Here’s where to start to make your default folder open whenever you open terminal! 
+When starting up a terminal on your Mac, are you annoyed with always having to `cd` wherever you go? Here’s where to start to make your default folder open whenever you open terminal!
 
 ## Start by ensuring that you’re using zsh
 
 - There are a two ways to check your shell. `ps -p $$` or `echo "$SHELL"`
 
-
 `ps -p $$` You'll see under CMD /bin/zsh
+
 ```zsh
 ~ % ps -p $$
   PID TTY           TIME CMD
@@ -22,27 +22,25 @@ When starting up a terminal on your Mac, are you annoyed with always having to `
 ```
 
 `echo "$SHELL"` to check your shell which will return /bin/zsh
+
 ```zsh
 ~ % echo "$SHELL"
 /bin/zsh
-~ % 
+~ %
 ```
 
-- Seeing ‘zsh’ will tell you you’re good to go. 
+- Seeing ‘zsh’ will tell you you’re good to go.
   - [If you’re not using zsh, check out how to change your default directory in bash](https://www.shellhacks.com/git-bash-change-default-directory/)
 - You can then go to the bottom of the .zschrc file and add the path to the default folder, for example, `cd Desktop/code` Keep reading to find steps on how to show and find your .zschrc file
 
 ## Find the .zschrc file:
 
-- Open Finder > View > Select Show Path Bar 
+- Open Finder > View > Select Show Path Bar
 - Once the path bar is updated at the bottom, select the first item. in this example, it is ‘Macintosh HD’
 
 ![Screenshot of where the "Select Show Path Bar" is under the view option](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/17yh1x7zxstxwt0i7r99.png)
 
 ![Screenshot example of what the Path Bar looks like at the bottom of the finder window](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/bu0fzv9j7ta243bdlhok.png)
-
-
-
 
 ## Show all file types:
 
@@ -51,16 +49,13 @@ When starting up a terminal on your Mac, are you annoyed with always having to `
 
 ![Screenshot of what the hidden files look like after doing “Command” + “Shift” + “.”](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/3984plmxe1lgfjeiocwy.png)
 
-
-
-
 ## Open the .zshrc file
 
 - If having issues, change the application to open with to TextEdit
 
-## Add the default directory 
-- Add the default directory at the bottom of the file
+## Add the default directory
 
+- Add the default directory at the bottom of the file
 
 ![screenshot of .zshrc file and adding cd Desktop/code at the bottom](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/0cwf0l5bn4thkd6amqea.png)
 
@@ -173,11 +168,8 @@ source $ZSH/oh-my-zsh.sh
 cd Desktop/code
 ```
 
-
-
 ## Save, and Restart Terminal
 
 - The folder will be updated to your preferred starting folder
 
 ![Screenshot of terminal opening with new default directory](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/clxbom8i117ctcxynw8k.png)
-

@@ -1,7 +1,7 @@
 // adapted from https://github.com/withastro/astro.build/blob/112bdc723b3ba305997c95d7ce02304624d0d3ce/src/data/showcase/index.ts
 
 import type { StreamSite } from "~/types";
-import sitesData from "./paststream.json"
+import sitesData from "./paststream.json";
 
 const allImages = import.meta.glob<ImageMetadata>("./images/*.{png,jpg,jpeg}", {
   eager: true,
