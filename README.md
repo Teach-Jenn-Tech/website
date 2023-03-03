@@ -2,6 +2,8 @@
 
 ![tjt header image](https://user-images.githubusercontent.com/77285384/213879912-9dfcfb20-cf87-44e8-9d19-1121a7dfd882.png)
 
+![testimage](Screenshot2023-02-19at12.06.04PM.png)
+
 Welcome to the Teach Jenn Tech Website Repo! This website was built share resources with beginners, be a portfolio, and help Jenn get a job with the resume piece. 🤞 
 
 **Contribution Guidelines:** Coming Soon
