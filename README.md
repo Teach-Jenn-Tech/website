@@ -1,10 +1,5 @@
 ![tjt header image](https://user-images.githubusercontent.com/77285384/213879912-9dfcfb20-cf87-44e8-9d19-1121a7dfd882.png)
 
-<p align="center">
-  <a href="https://astro.build">
-    <img alt="Built with Astro" src="https://astro.badg.es/v1/built-with-astro.svg">
-  </a>
-</p>
 
 Welcome to the Teach Jenn Tech Website Repo! This website was built to:
 
